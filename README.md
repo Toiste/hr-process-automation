@@ -11,6 +11,7 @@
 - **pandas**
 - **pytest**
 - **pytest-django**
+- - **github-api**
 
 ## Tecnologias Utilizadas no FrontEnd
 
