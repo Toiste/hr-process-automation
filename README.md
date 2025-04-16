@@ -2,7 +2,7 @@
 
 **Link Documentação Back:** https://github.com/Toiste/hr-process-automation/tree/main/backend
 
-**Link Documentação Front:**
+**Link Documentação Front:** https://github.com/Toiste/hr-process-automation/tree/main/frontend
 
 ## Tecnologias Utilizadas no Backend
 - **Django**
@@ -11,7 +11,7 @@
 - **pandas**
 - **pytest**
 - **pytest-django**
-- - **github-api**
+- **github-api**
 
 ## Tecnologias Utilizadas no FrontEnd
 
