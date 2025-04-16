@@ -4,6 +4,7 @@ from rest_framework import status, viewsets
 from .models import Candidato
 from .serializers import CandidatoSerializer
 import requests
+import os
 
 class BuscarCandidatosGitHub(APIView):
     def get(self, request):
@@ -20,6 +21,11 @@ class BuscarCandidatosGitHub(APIView):
         headers = {
             "Accept": "application/vnd.github+json",
         }
+
+        token = os.getenv("GITHUB_TOKEN")
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
+
 
         response = requests.get(url, params=params, headers=headers)
         data = response.json()
